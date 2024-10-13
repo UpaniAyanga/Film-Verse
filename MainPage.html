@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="MainPageStyles.css" rel="stylesheet">
+    <link href="CommonStyles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Film Verse</title>
+</head>
+
+<body>
+
+<!--navigation bar-->
+<div class="navBar">
+    <div class="navBar-content">
+        <div class="logo-container">
+            <a href="pageEditor.html">
+            <img class="logo-img" src="st2-white.png" alt="Logo">
+            </a>
+        </div>
+        <ul>
+            <li> <a href="MainPage.html" class="active"> Home </a> </li>
+            <li> <a href="commentForm.html"> Comments </a> </li>
+            <li><a class='dropdown-arrow' href='ActionBlog.html'>Blogs</a>
+                <ul class='sub-menus'>
+                    <li><a href='ActionBlog.html'>Action</a></li>
+                    <li><a href=''>Horror</a></li>
+                    <li><a href=''>Comedy</a></li>
+                    <li><a href=''>Science Fiction</a></li>
+                </ul>
+            </li>
+            <li> <a href="#"> Quiz </a> </li>
+            <li> <a href="#"> Shop </a> </li>
+            <li> <a href="#"> Gallery </a> </li>
+            <li> <a href="#"> Site Map </a> </li>
+            <li> <a href="#"> About Us </a> </li>
+        </ul>
+    </div>
+</div>
+<!--navigation bar-->
+
+<div class="main-page">
+    <div class="content">
+        <h1>Welcome to <br><span class="content1">Film Verse</span></h1>
+    </div>
+    <div class="introduction">
+        <p>
+            Welcome to a world where imagination takes center stage, where dreams unfold and stories come to life.
+            Step
+            into a realm of cinematic wonders,
+            where every frame holds the power to transport you to new dimensions.
+            Lights, camera, action! Let your cinematic odyssey begin!
+        </p>
+    </div>
+
+    <button class="button"  onclick="scrollToGenres()">Lets Get Started</button>
+</div>
+
+<div class="genre">
+    <div class="movieGenres" id="movieGenres">
+        <h2>Movie Genres to Explore</h2>
+        <p class="genreDescription">Discover different genres of movies and dive into captivating stories.</p>
+    </div>
+
+    <div class="gridContainer">
+        <a href="ActionBlog.html" class="gridItem">
+            <img src="action.jpg" alt="action">
+            <p class="imageDescription">Action Movies</p>
+        </a>
+        <a href="" class="gridItem">
+            <img src="commedy.jpg" alt="comedy">
+            <p class="imageDescription">Comedy Movies</p>
+        </a>
+        <a href="" class="gridItem">
+            <img src="horror.jpg" alt="horror">
+            <p class="imageDescription">Horror Movies</p>
+        </a>
+        <a href="" class="gridItem">
+            <img src="sciencefiction.jpg" alt="scific">
+            <p class="imageDescription">Science Fiction Movies</p>
+        </a>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="footer">
+    <p>&copy; 2023 Film Verse. All rights reserved.</p>
+</footer>
+<!--footer-->
+
+<!--Scroll to the movie genres section-->
+<script>
+    function scrollToGenres() {
+        document.getElementById("movieGenres").scrollIntoView({
+            behavior: "smooth",
+        });
+    }
+</script>
+
+</body>
+
+</html>

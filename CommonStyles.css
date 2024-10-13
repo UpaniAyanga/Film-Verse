@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins');
+
+* {
+    font-family: 'Merriweather', serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*navigation bar styling*/
+.navBar {
+    font-family: 'Merriweather', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.navBar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navBar li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.navBar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navBar a:hover {
+    background-color: #609EA2;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.navBar a.active {
+    background-color: #C92C6D;
+    color: #ffffff;
+}
+
+.navBar .sub-menus {
+    display: none;
+    position: absolute;
+    background-color: #0e0707;
+    box-shadow: 0 8px 16px 0 rgba(47, 40, 40, 0.2);
+    z-index: 1;
+    margin-top: 0;
+}
+
+.navBar li:hover .sub-menus {
+    display: block;
+}
+
+.navBar .sub-menus li {
+    display: block;
+}
+
+.navBar .sub-menus li a {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.navBar .sub-menus li a:hover {
+    background-color: #badabb;
+}
+
+/*logo styling*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.navBar .logo-img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/*footer styling*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    height: auto;
+}
+.footer p{
+    margin-top:0;
+}
+

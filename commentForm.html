@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <link href="commentFormStyles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Film Verse</title>
+</head>
+
+<!--<body background="quizImg.jpg" >-->
+
+<!--navigation bar-->
+<div class="navBar">
+    <div class="navBar-content">
+        <div class="logo-container">
+            <a href="pageEditor.html">
+                <img class="logo-img" src="st2-white.png" alt="Logo">
+            </a>
+        </div>
+        <ul>
+            <li> <a href="MainPage.html"> Home </a> </li>
+            <li> <a href="commentForm.html" class="active"> Comments </a> </li>
+            <li><a class='dropdown-arrow' href='ActionBlog.html'>Blogs</a>
+                <ul class='sub-menus'>
+                    <li><a href='ActionBlog.html'>Action</a></li>
+                    <li><a href=''>Horror</a></li>
+                    <li><a href=''>Comedy</a></li>
+                    <li><a href=''>Science Fiction</a></li>
+                </ul>
+            </li>
+            <li> <a href="#"> Quiz </a> </li>
+            <li> <a href="#"> Shop </a> </li>
+            <li> <a href="#"> Gallery </a> </li>
+            <li> <a href="#"> Site Map </a> </li>
+            <li> <a href="#"> About Us </a> </li>
+        </ul>
+    </div>
+</div>
+<!--navigation bar-->
+
+<!--form start-->
+<div class="container">
+    <h1 class="content">Please Rate us!</h1>
+    <form id="myForm" action="mailto:upani.20223235@iit.ac.lk" method="POST" enctype="text/plain">
+
+        <label for="fname">Enter you name: &nbsp;&nbsp; <input type="text" id="fname"  name="fullName" required>  </label>
+        <div class="rating-bar">
+            <label for="rating">How satisfied were you with our website today?</label>
+            <input type="range" id="rating" min="0" max="10" name="satisfaction">
+        </div>
+
+        <label for="reasons">Please could you tell us your reasons for giving this rating?</label>
+        <textarea id="reasons" placeholder="I gave this rating because..." name="rateReason" required></textarea>
+
+
+        <label for="task" >How did you want to complete this task today?</label>
+        <select id="task"  class="dropdown" name="taskComplete">
+            <option value="">--please select--</option>
+            <option value="Desktop">Desktop</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="task2">If you had to complete this task again, how would you prefer it? (optional)</label>
+        <select id="task2"  class="dropdown" name="task2Complete">
+            <option value="">--please select--</option>
+            <option value="Desktop">Desktop</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <button class="button" type="submit">Submit</button>
+    </form>
+</div>
+<!--form-end-->
+
+<div class="psuedo-div"></div>
+
+<!--footer-->
+<footer class="footer">
+    <p>&copy; 2023 Film Verse. All rights reserved.</p>
+</footer>
+<!--footer-->
+<script>
+    const form = document.querySelector('#myForm');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const mailtoLink = 'mailto:upani.20223235@iit.ac.lk?subject=' + encodeURIComponent('Form Submission') + '&body=' +
+            encodeURIComponent('Name: ' + formData.get("fullName") + " " +
+                'Satisfaction: ' + formData.get("satisfaction") + " " +
+                'Reasons: ' + formData.get("rateReason") + " " +
+                'How they completed: ' + formData.get("taskComplete") + " " +
+                'How they prefer: ' + formData.get("task2Complete"));
+
+        window.open(mailtoLink, '_blank');
+        window.location.href = "thankYouPage.html";
+    });
+</script>
+</body>
+</html>

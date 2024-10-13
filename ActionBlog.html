@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="ActionBlogStyles.css" rel="stylesheet">
+    <link href="CommonStyles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Action movies</title>
+</head>
+<body>
+<div class="scroll-container">
+
+    <!--navigation bar-->
+    <div class="navBar">
+        <div class="navBar-content">
+            <div class="logo-container">
+                <a href="pageEditor.html">
+                    <img class="logo-img" src="st2-white.png" alt="Logo">
+                </a>
+            </div>
+            <ul>
+                <li> <a href="MainPage.html"> Home </a> </li>
+                <li> <a href="commentForm.html"> Comments </a> </li>
+                <li><a class='dropdown-arrow active' href='ActionBlog.html'>Blogs</a>
+                    <ul class='sub-menus'>
+                        <li><a href='ActionBlog.html'>Action</a></li>
+                        <li><a href=''>Horror</a></li>
+                        <li><a href=''>Comedy</a></li>
+                        <li><a href=''>Science Fiction</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#"> Quiz </a> </li>
+                <li> <a href="#"> Shop </a> </li>
+                <li> <a href="#"> Gallery </a> </li>
+                <li> <a href="#"> Site Map </a> </li>
+                <li> <a href="#"> About Us </a> </li>
+            </ul>
+        </div>
+    </div>
+    <!--navigation bar-->
+
+    <div class="blogContent">
+        <h2 class="heading">ACTION GENRE</h2>
+        <p>
+            The action movie genre is an exhilarating and adrenaline-pumping category of film that captivates audiences with its high-octane sequences, thrilling stunts, and intense fight scenes.
+            These films often feature heroic protagonists who embark on dangerous missions, battling formidable enemies and overcoming seemingly insurmountable obstacles.
+            Action movies are known for their fast-paced narratives, explosive special effects, and heart-pounding soundtracks, creating an immersive cinematic experience.
+        </p>
+
+        <p>
+            Action movies have been around since the early days of cinema.
+            One of the earliest examples of an action movie is the 1903 film "The Great Train Robbery," directed by Edwin S. Porter.
+            Action movies can be further categorized into subgenres, such as martial arts films, spy movies, superhero films, disaster films, and war movies.
+            Each subgenre brings its own unique elements and storytelling conventions to the action genre.
+        </p>
+        <p>
+            The action movie genre continues to thrive, attracting both established and emerging filmmakers who bring their own creative visions to the genre.
+            With its universal appeal and ability to entertain, action movies are likely to remain a staple of the film industry for years to come.
+        </p>
+
+        <br/>
+        <br/>
+        <button class="button" onclick="scrollToActionMovies()">Check Movies</button>
+    </div>
+
+    <div class="blogContent">
+        <h2 id="actionMovies" class="heading">MOST POPULAR ACTION MOVIES OF ALL TIME</h2>
+        <ul>
+            <li><strong>"Die Hard" (1988)</strong> - This film, starring Bruce Willis as John McClane, set the standard for the modern action film and became a franchise of its own. Its blend of high-stakes action, suspense, and a charismatic protagonist made it a classic.</li> <br/>
+            <li><strong>"The Dark Knight" (2008)</strong> - Christopher Nolan's superhero crime thriller starring Christian Bale as Batman and Heath Ledger as the Joker received critical acclaim and became a cultural phenomenon. It elevated the superhero genre and showcased intense action sequences.</li><br/>
+            <li><strong>"Mad Max: Fury Road" (2015)</strong> - Directed by George Miller, this post-apocalyptic action film garnered widespread praise for its exhilarating action sequences, stunning visuals, and feminist undertones. It revitalized the "Mad Max" franchise and received numerous accolades.</li><br/>
+            <li><strong>"The Avengers" (2012)</strong> - This Marvel Studios film brought together iconic superheroes like Iron Man, Captain America, Thor, and the Hulk in a grand-scale action extravaganza. Its success led to a shared cinematic universe and a new wave of superhero movies.</li><br/>
+            <li><strong>"John Wick" (2014)</strong> - Starring Keanu Reeves as the eponymous character, this franchise revitalized the action genre with its stylized, relentless action sequences and its unique world of assassins. It quickly gained a cult following and spawned multiple successful sequels.</li><br/>
+            <li><strong>"The Matrix" (1999)</strong> - The Wachowski siblings' sci-fi action film starring Keanu Reeves introduced groundbreaking visual effects and innovative action sequences. Its unique blend of philosophy, martial arts, and stunning visuals made it a cultural phenomenon.</li><br/>
+            <li><strong>"Mission: Impossible - Fallout" (2018)</strong> - The sixth installment in the "Mission: Impossible" franchise, directed by Christopher McQuarrie, received widespread acclaim for its relentless action, practical stunts, and gripping storyline. It is regarded as one of the best entries in the series.</li><br/>
+            <li><strong>"The Fast and the Furious" franchise</strong> - This long-running franchise started as a street racing film but evolved into a global phenomenon known for its high-octane action, thrilling heists, and charismatic ensemble cast. It has become one of the highest-grossing franchises of all time.</li><br/>
+            <li><strong>"Lethal Weapon" (1987)</strong> - This buddy cop film starring Mel Gibson and Danny Glover spawned a successful franchise known for its dynamic action sequences, humor, and the chemistry between its lead actors.</li><br/>
+            <li><strong>"Crouching Tiger, Hidden Dragon" (2000)</strong> - Ang Lee's martial arts epic gained critical acclaim and international recognition. Its beautifully choreographed fight scenes, stunning cinematography, and emotional storytelling helped popularize Chinese-language films in the global market.</li><br/>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function scrollToActionMovies() {
+        let element = document.getElementById("actionMovies");
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+</body>
+</html>
+

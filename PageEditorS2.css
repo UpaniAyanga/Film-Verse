@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins');
+
+* {
+    font-family: 'Merriweather', serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(275deg, rgb(110, 55, 155) 0%, rgb(45, 253, 222) 34%, rgb(243, 124, 124) 99%) no-repeat;
+}
+.contentContainer {
+    background-color: white;
+    width: fit-content;
+    margin: 10px;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.contentContainer h3 {
+    margin: 10px;
+}
+
+.contentContainer a {
+    color: #2200ff;
+    padding-bottom: 10px;
+}
+
