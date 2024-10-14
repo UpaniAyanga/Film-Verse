@@ -3,6 +3,7 @@
 Welcome to Filmverse, a website about all things films! This project was developed as part of my first-year web development coursework. Everything was built using pure HTML and CSS to demonstrate fundamental web development skills.
 
 ✨ Project Overview
+
 This website includes the following sections:
 
 🌐 Header and Footer: Designed consistent headers and footers for easy navigation.
